@@ -1,0 +1,277 @@
+@keyframes slide{
+  0%{
+    transform:translateX(-500px);
+    opacity:0;
+  }
+  5%{
+    transform:translateX(0);
+    opacity:1;
+  }
+  75%{
+    transform:translateX(0);
+    opacity:1;
+  }
+  80%{
+    transform:translateX(400px);
+    opacity:0;
+  }
+  95%{
+    transform:translateX(450px);
+    opacity:0;
+  }
+  100%{
+    transform:translateX(500px);
+    opacity:0;
+  }
+}
+
+/* common things */
+
+.main{
+  padding:40px 0 0;
+  overflow:hidden;
+}
+
+section{  
+  overflow:hidden;  
+}
+
+section>div{
+  position:relative;
+  height:174px;
+  overflow:hidden;  
+}
+
+section>div>a{
+  position:absolute;
+  width:100%;
+  top:50%;  
+  left:50%;
+  transform:translate(-50%,-50%)
+}
+
+section>div>a>h2,
+section>div>a>h3,
+section>div>a>p{
+  margin:50px 0 0;
+  color:#fff;  
+}
+
+section>div>a>h2{
+  font-size:3rem;
+  margin:0;
+}
+
+section>div>a>h3{
+  font-size:1.4rem;
+  margin:15px 0 20px;  
+}
+
+section>div>a>p{  
+  width:70px;
+  height:20px;  
+  background:#fff;
+  border-radius:5px;
+  margin:0 auto;
+  color:#000;
+  line-height:20px;
+  font-size:1.2rem;  
+}
+
+/* yuna */
+
+#yuna div{
+  height:174px;
+}
+
+#yuna div a h2{
+  margin:0;
+}
+
+video{
+  width:100%;
+}
+
+#yuna>div>a>h2,
+#yuna>div>a>h3,
+#yuna>div>a>p{
+  animation:slide 21s ease infinite;
+}
+
+/* zero */
+
+#zero{  
+  background:url(../img/sub2_sec1.jpg)no-repeat center/cover
+}
+
+#zero h2{
+  text-transform:uppercase;
+  animation:slideLeftOut 0s ease forwards;
+}
+
+#zero h3{
+  animation:slideRightOut 0s ease forwards;
+}
+
+#zero p{
+  animation:fadeOut 0s ease forwards;
+}
+
+/* kids */
+
+#kids{
+  background:url(../img/sub2_sec2.jpg)no-repeat center/ cover
+}
+
+#kids a{
+  width:83.333%;
+}
+
+#kids h2{
+  text-transform: uppercase;
+  animation:slideLeftOut 0s ease forwards;
+}
+
+#kids h3{
+  animation:slideRightOut 0s ease forwards;
+}
+
+#kids p{
+  animation:fadeOut 0s ease forwards;
+}
+
+
+#kids h3 span{
+  display:block;
+}
+
+/* eastlogue */
+
+#eastlogue{
+  background:url(../img/sub2_sec3.jpg)no-repeat center/ cover
+}
+
+#eastlogue h2{
+  text-transform:uppercase;
+  animation:slideLeftOut 0s ease forwards;
+}
+
+#eastlogue h3{
+  animation:slideRightOut 0s ease forwards;
+}
+
+#eastlogue p{
+  animation:fadeOut 0s ease forwards;
+}
+
+#eastlogue h3 span{
+  display:block;
+}
+
+@media screen and (min-width:768px){
+  #yuna div{
+    height:348px;
+  }
+
+  .main{
+    padding:50px 0 0;    
+  }
+
+  section{
+    height:348px;
+  }
+
+  section>div{  
+    position:relative;
+    height:348px;
+  }
+
+  section>div>a>h2{
+    font-size:6rem;
+  }
+
+  section>div>a>h3{
+    font-size:2.2rem;
+    margin:20px 0 25px;
+  }
+
+  section>div>a>p{
+    width:120px;
+    height:30px;    
+    border-radius:10px;    
+    line-height:30px;
+    font-size:2rem;
+  }
+
+  section>div>a>p:hover{
+    background:#c60d1c;
+    color:#fff;
+  }
+
+  #zero>div>a>h3>span{
+    display:block;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .main{
+    padding:60px 0 0;
+  }
+
+  section{
+    height:467px;
+  }
+
+  section>div{      
+    height:467px;
+  }
+
+  video{
+    width:100%;
+    animation:fadeIn 2s ease;
+  }
+
+  section>div>a>h2{
+    font-size:7rem;
+  }
+
+  section>div>a>h3{
+    font-size:2.5rem;
+    margin:25px 0 30px;
+  }
+
+  section>div>a>p{
+    width:140px;
+    height:35px;    
+    line-height:35px;
+    font-size:2.6rem;
+  }
+
+  #yuna div{
+    height:auto;
+  }
+}
+
+@media screen and (min-width:1300px){
+  .main{
+    padding:80px 0 0;
+  }
+
+  section{
+    height:891px;
+  }
+
+  section>div{      
+    height:891px;
+  }
+
+  #yuna div{
+    height:891px;
+  }
+
+  video{
+    width:auto;
+    height:891px;    
+    left:50%;    
+  }
+}

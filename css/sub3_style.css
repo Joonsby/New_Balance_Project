@@ -1,0 +1,166 @@
+@keyframes slideDown{
+  from{
+    transform:translateY(-100px);
+    opacity:0
+  }
+}
+
+@keyframes slideDownOut{
+  from{
+    transform:translateY(0);
+    opacity:1
+  }
+  to{
+    transform:translateY(-100px);
+    opacity:0
+  }
+}
+
+@keyframes slideUp{
+  from{
+    transform:translateY(100px);
+    opacity:0
+  }
+}
+
+@keyframes slideUpOut{
+  from{
+    transform:translateY(0);
+    opacity:1
+  }
+  to{
+    transform:translateY(100px);
+    opacity:0
+  }
+}
+
+.main{
+  padding:40px 0 80px;  
+}
+
+section>h2,
+section>p{
+  color:#c60d1c
+}
+
+section>h2{  
+  font-size:2rem;
+  margin:40px 0;
+  animation:slideDownOut 0s ease forwards;
+}
+
+section>p{  
+  animation:slideUp 1s ease
+}
+
+i{
+  font-style:normal;  
+}
+
+section iframe{
+  width:100%;
+  height:211px;
+  border:0;
+  animation:slideUpOut 0s ease forwards
+}
+
+#media{
+  height:221px;
+  background:url(../img/sub3_background.jpg)no-repeat center/cover;
+  animation:fadeIn 1.5s;
+}
+
+#media h2{
+  padding:75px 0 20px;
+  margin:0;
+  animation:slideDown 1s ease;
+}
+
+#media p{
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+@media screen and (min-width:768px){
+  .main{
+    padding:50px 0 100px;
+  }
+
+  section>h2{  
+    font-size:4rem;
+    margin:60px 0;
+  }
+
+  section iframe{    
+    height:432px;
+  }
+
+  #media{
+    height:432px;
+  }
+
+  #media h2{
+    padding:170px 0 40px;
+    font-size:6rem;
+  }
+
+  #media p{
+    font-size:2rem;    
+  }
+}
+
+@media screen and (min-width:1024px){
+  .main{
+    padding:60px 0 120px
+  }
+
+  section>h2{  
+    font-size:5rem;
+    margin:80px 0;
+  }
+
+  section iframe{    
+    height:576px;
+  }
+
+  #media{
+    height:576px;
+  }
+
+  #media h2{
+    padding:213px 0 60px;    
+    font-size:8rem;
+  }
+
+  #media p{
+    font-size:4rem;
+  }
+}
+
+@media screen and (min-width:1300px){
+  .main{
+    padding:0 0 160px
+  }
+
+  section>h2{  
+    font-size:7rem;
+    margin:100px 0 80px;    
+  }  
+
+  section iframe{    
+    height:800px;
+  }
+
+  #media{
+    height:1080px;
+  }
+
+  #media h2{
+    padding:439px 0 60px;    
+    font-size:10rem;
+  }
+
+  #media p{
+    font-size:6rem;
+  }
+}

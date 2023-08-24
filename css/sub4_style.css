@@ -1,0 +1,351 @@
+
+main>h2{
+  margin:40px 0 30px;
+  text-transform: uppercase;  
+}
+
+main>h2>span{
+  display:inline-block;
+  animation: letter 1s ease-in-out forwards;
+}
+
+main>h2>span:nth-of-type(2){
+  animation-delay:0.1s
+}
+
+main>h2>span:nth-of-type(3){
+  animation-delay:0.2s
+}
+
+main>h2>span:nth-of-type(4){
+  animation-delay:0.3s
+}
+
+main>h2>span:nth-of-type(5){
+  animation-delay:0.4s
+}
+
+/* findStore */
+
+#findStore{
+  display:flex;  
+}
+
+#findStore div{
+  width:50%;
+  height:22px;
+  font-size:1.5rem;
+  line-height:22px;
+  cursor:pointer;
+}
+
+#findStore .area{
+  border-top:1px solid #c60d1c;
+  border-bottom:1px solid #c60d1c;
+  color:#c60d1c;  
+}
+
+#findStore .area.off{  
+  border-bottom:1px solid #777;
+  color:#777
+}
+
+#findStore .near{
+  border-top:1px solid #c60d1c;
+  border-bottom:1px solid #777;
+  color:#777;
+}
+
+#findStore .near.on{
+  border-top:1px solid #c60d1c;
+  border-bottom:1px solid #c60d1c;
+  color:#c60d1c
+}
+
+#findStore .near.off{  
+  border-bottom:1px solid #777;
+  color:#777
+}
+
+/* searchStore */
+
+#searchStore{
+  position:relative;
+  margin:30px 0;
+  display:flex;
+  justify-content: space-between;
+}
+
+#searchStore #city,
+#searchStore input{  
+  border:1px solid #888;
+  border-radius:3px;
+}
+
+#searchStore #city{
+  width:22.698%;
+  animation:slideLeft 1s ease;
+}
+
+#searchStore #storeName{
+  width:74.286%;
+  text-indent:5px;
+  animation:slideRight 1s ease;
+}
+
+#searchStore>a{
+  position:absolute;
+  top:50%;
+  right:10px;
+  transform:translateY(-50%);
+  display:block;
+  width:15px;
+  height:15px;
+  background:url(../img/search_on.png)no-repeat center/cover;
+  animation:fadeIn 3s ease
+}
+
+/* section */
+
+section{
+  text-align:left;
+  margin-bottom:50px;
+}
+
+section iframe{
+  width:100%;
+  height:200px;
+  border:none;  
+}
+
+section div{
+  border:1px solid #ccc
+}
+
+section h2{
+  margin:30px 15px 20px;
+  font-size:3rem;
+  font-weight:bold;
+}
+
+section h3{
+  margin:0 15px 20px;
+  font-size:2rem;
+  font-weight:normal;
+  color:#666
+}
+
+section p{
+  margin:0 15px 30px;
+  font-size:2rem;
+  color:#666
+}
+
+#area1 iframe{
+  animation:slideLeft 1s ease
+}
+
+#area1 div{
+  animation:slideRight 1s ease
+}
+
+#area2 iframe,
+#area3 div,
+#area4 iframe{
+  animation:slideLeftOut 0s ease forwards;
+}
+
+#area2 div,
+#area3 iframe,
+#area4 div{
+  animation:slideRightOut 0s ease forwards;
+}
+
+
+
+@media screen and (min-width:768px){
+  main h2{
+    margin:60px 0 40px;
+    font-size:6rem;
+  }
+
+  /* findStore */
+
+  #findStore div{    
+    height:40px;
+    font-size:2.5rem;
+    line-height:40px;    
+  }
+
+  /* searchStore */
+
+  #searchStore{    
+    margin:40px 0;
+  }
+
+  #searchStore #city,
+  #searchStore input{
+    height:40px;
+    font-size:2.2rem;    
+  }
+
+  #searchStore>a{
+    width:23px;
+    height:23px;
+  }
+
+  /* section */
+
+  section{
+    margin-bottom:60px;
+  }
+
+  section iframe{    
+    height:333px;     
+  }
+
+  section h2{
+    margin:40px 30px 25px;
+    font-size:4.5rem;
+  }
+
+  section h3{
+    margin:0 30px 25px;
+    font-size:3rem;    
+  }
+
+  section p{
+    margin:0 30px 25px;
+    font-size:3rem;    
+  }
+
+}
+
+@media screen and (min-width:1024px){
+  main h2{
+    margin:80px 0 60px;
+    font-size:7rem;
+  }
+
+  /* findStore */
+
+  #findStore div{    
+    height:60px;
+    font-size:3rem;
+    line-height:60px;    
+  }
+
+  /* searchStore */
+
+  #searchStore{      
+    margin:50px 0;         
+  }
+
+  #searchStore #city,
+  #searchStore input{      
+    height:50px;
+    font-size:2.5rem;
+  }
+
+  #searchStore>a{
+    width:25px;
+    height:25px;
+  }
+
+  /* section */
+
+  section{
+    margin-bottom: 80px;
+  }
+
+  section iframe{
+    width:50%;
+    height:222px;
+  }
+
+  section h2{
+    margin: 45px 20px 30px;
+    font-size:3rem;
+  }
+
+  section h3{
+    margin: 30px 20px;
+    font-size:2rem;
+  }
+
+  section p{
+    margin: 30px 20px 45px;
+    font-size:2rem;
+  }
+
+  section div{
+    width:50%;
+    border-left:none;
+    border-right:none
+  }
+
+  section:nth-of-type(odd) iframe,
+  section:nth-of-type(even) div{
+    float:right;
+  }
+}
+
+@media screen and (min-width:1300px){
+  main h2{
+    margin:80px 0 0;
+    padding: 100px 0;
+    font-size:8rem;
+  }
+
+  /* findStore */
+
+  #findStore div{    
+    height:80px;
+    font-size:4rem;
+    line-height:80px;    
+  }
+
+  /* searchStore */
+
+  #searchStore{
+    margin:60px 0
+  }
+
+  #searchStore #city,
+  #searchStore #storeName{      
+    height:60px;
+    font-size:3rem;
+    text-indent:10px;
+  }
+
+  #searchStore>a{
+    width:30px;
+    height:30px;    
+  }
+
+  /* section */
+
+  section{
+    margin-bottom: 100px;
+  }
+
+  section iframe{
+    height:338px;
+  }
+
+  section h2{
+    padding:0;
+    margin: 78px 30px 40px;
+    font-size:4rem;
+  }
+
+  section h3{
+    margin: 40px 30px;
+    font-size:3rem;
+  }
+
+  section p{
+    margin: 40px 30px 78px;
+    font-size:3rem;
+  }
+}
