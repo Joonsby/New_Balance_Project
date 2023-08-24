@@ -1,5 +1,5 @@
 // rec slider
-
+$.noConflict();
 $(document).ready(function(){
   $('.product').slick({
     dots: true,  
